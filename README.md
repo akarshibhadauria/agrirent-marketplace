@@ -22,18 +22,21 @@ An advanced, high-trust Full-Stack (MERN) marketplace designed for seamless agri
 - **Backend:** Node.js, Express.js, JWT (HTTP-only cookies), Socket.io (for real-time dispute alerts)
 - **Database:** MongoDB (Mongoose), featuring geospatial queries (`$geoNear`) for finding nearby tools.
 
-[ React.js / Tailwind CSS Frontend ]
-│
-HTTP/REST   │   WebSockets (Live Lock Status)
-┌──────────────┴──────────────┐
-▼                             ▼
+```text
+       [ React.js / Tailwind CSS Frontend ]
+                        │
+            HTTP/REST   │   WebSockets (Live Lock Status)
+         ┌──────────────┴──────────────┐
+         ▼                             ▼
 ┌──────────────────────────────────────────────┐
 │          Node.js / Express.js Backend        │
 └──────────────────────┬───────────────────────┘
-▼
-┌───────────────────────────┐
-│     MongoDB Database      │
-└───────────────────────────┘
+                       ▼
+         ┌───────────────────────────┐
+         │     MongoDB Database      │
+         └───────────────────────────┘
+```
+
 
 ---
 
@@ -75,7 +78,7 @@ agrirent-marketplace/
 
 ### Setup Steps
 
-1. **Clone the repository:**
+ 1. **Clone the repository:**
    ```bash
    git clone https://github.com
    cd agrirent-marketplace
